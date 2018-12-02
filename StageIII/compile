@@ -1,0 +1,4 @@
+#!/bin/bash
+#g++ -g -lssl -lcrypto -Wno-deprecated *.cpp
+#g++ -g -lssl -lcrypto -std=c++11 *.cpp
+g++ -g -std=c++11 *.cpp -lssl -lcrypto

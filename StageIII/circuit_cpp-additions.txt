@@ -1,0 +1,98 @@
+// Create garbled values and tables
+//     k is the security parameter in bits
+//     IV will be k/8 bytes in size
+
+void Circuit::garble(uint32_t k) {
+    assert(k % 8 == 0); // security parameter must be a multiple of 8
+    
+    // create the random values for each wire
+    uint32_t wire_count = input_map.size() + gates.size();
+    byte *iv[wire_count][2];  // initialization vector for 0 and 1 on each wire
+    bool pb[wire_count];      // permutation bit for each wire
+    
+    for (int wire=0; wire<wire_count; wire++) {
+        for (int bit=0; bit<2; bit++) {
+            iv[wire][bit] = new byte[k/8];
+            // sample some random values for use as IV and PB
+            for (int i=0; i<k/8; i++) {
+                iv[wire][bit][i] = myrand() & 0xFF;
+            }
+        }
+        pb[wire] = myrand() % 2;
+    }
+           
+    // create the garbled values of input IO wires
+    IO *m;    
+    for (int i=0; i<input_map.size(); i++) {
+        m = &(input_map.at(i));
+        m->garbled_value = new byte[(k/8)+1]; // <--------- 
+        
+        // wires do not have a garbled table; only gates do
+        // we will only use WIRE_C's space to store the garbled values
+        m->gt = new GarbledTable(k, NULL, m->id);
+        m->gt->init(NULL, NULL, iv[m->id], false, false, pb[m->id]);        
+    }
+    
+     
+    // create garbled values and table in each gate
+    Gate *g;
+    bool *tt;   // truth table
+    bool AND_GATE[4] = {0,0,0,1}; // AND gate truth table
+    bool OR_GATE[4] = {0,1,1,1};  // OR gate truth table
+    bool XOR_GATE[4] = {0,1,1,0}; // XOR gate truth table
+
+    
+    for (int i=0; i<gates.size(); i++) {
+        g = &(gates.at(i));
+        switch (g->type) { // select the truth table based on gate type
+            case AND: tt = AND_GATE; break;
+            case  OR: tt = OR_GATE; break;
+            case XOR: tt = XOR_GATE; break;
+        }
+        g->garbled_value = new byte[(k/8)+1]; // <--------
+        g->gt = new GarbledTable(k, tt, g->id);
+        g->gt->init(iv[g->in1], iv[g->in2], iv[g->id], pb[g->in1], pb[g->in2], pb[g->id]);
+    }
+    
+    // clean up
+    for (int wire=0; wire<wire_count; wire++) {
+        for (int bit=0; bit<2; bit++) {
+            delete iv[wire][bit];
+        }
+    }
+}
+
+// Set the garbled values to be used on input wires
+//   before starting evaluation
+void Circuit::set_garbled_inputs(byte **g_vals) {
+    for (int i=0; i<input_map.size(); i++) {
+        input_map.at(i).garbled_value = g_vals[i];
+    }
+}
+
+/** Return the garbled value of a bit
+    id is the wire identifier
+    bit is 0 (false) or 1 (true)
+***/
+byte *Circuit::get_garbled_input(uint64_t id, bool bit) {
+     return NULL;
+}
+
+/***
+  Evaluate the garbled circuit; input must have been
+  set beforehand
+***/
+
+// output wire contains the garbled output values
+void Circuit::evaluate_garbled_circuit() {
+    
+}
+
+/**
+  Convert the garbled values on output wires to their
+  bit representation, compose the bits into a decimal
+  number and return the decimal number
+***/
+uint64_t Circuit::get_numeric_output_from_garble() {
+    return 0;
+}

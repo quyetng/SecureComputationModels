@@ -1,0 +1,943 @@
+
+Inputs
+-----------------------------------
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+
+Circuit
+-----------------------------------
+XOR.21	0	10
+AND.22	0	10
+AND.23	20	21
+XOR.24	20	21
+ OR.25	22	23
+XOR.26	1	11
+AND.27	1	11
+AND.28	25	26
+XOR.29	25	26
+ OR.30	27	28
+XOR.31	2	12
+AND.32	2	12
+AND.33	30	31
+XOR.34	30	31
+ OR.35	32	33
+XOR.36	3	13
+AND.37	3	13
+AND.38	35	36
+XOR.39	35	36
+ OR.40	37	38
+XOR.41	4	14
+AND.42	4	14
+AND.43	40	41
+XOR.44	40	41
+ OR.45	42	43
+XOR.46	5	15
+AND.47	5	15
+AND.48	45	46
+XOR.49	45	46
+ OR.50	47	48
+XOR.51	6	16
+AND.52	6	16
+AND.53	50	51
+XOR.54	50	51
+ OR.55	52	53
+XOR.56	7	17
+AND.57	7	17
+AND.58	55	56
+XOR.59	55	56
+ OR.60	57	58
+XOR.61	8	18
+AND.62	8	18
+AND.63	60	61
+XOR.64	60	61
+ OR.65	62	63
+XOR.66	9	19
+AND.67	9	19
+AND.68	65	66
+XOR.69	65	66
+ OR.70	67	68
+
+Outputs
+-----------------------------------
+24
+29
+34
+39
+44
+49
+54
+59
+64
+69
+70
+Garbling circuit
+-------------------------------------------
+ TABLE ID: 21
+-------------------------------------------
+Garbled input A
+	0: 08a8c43c93c79f5f639300
+	1: bf5f93c9f7b3597404ba01
+Garbled input B
+	0: dfb17df5dcb294945e4701
+	1: 2e94027c7d139574e31500
+Garbled output C
+	0: 586497aae6b664bb1b2b00
+	1: 35dc554c1d4fb57ada1f01
+Garbled Table
+	(0,0):  1b8662bba2fa874c08bd10e31bc24cacd063330b
+	(0,1):  1204dc01e219c1dc6069928ec2e6e0bb2ca6beef
+	(1,0):  07eebfc016d58cd3b2d2834f3ee7e0cfe0b42c0a
+	(1,1):  f3a7ab4a83a711ea891219b622c07e9909cc58b5
+-------------------------------------------
+ TABLE ID: 22
+-------------------------------------------
+Garbled input A
+	0: 08a8c43c93c79f5f639300
+	1: bf5f93c9f7b3597404ba01
+Garbled input B
+	0: dfb17df5dcb294945e4701
+	1: 2e94027c7d139574e31500
+Garbled output C
+	0: bf0350d1246425c9404e00
+	1: 1fd549c8a473ad0cf24201
+Garbled Table
+	(0,0):  f1b61f3545d3db37016d63276fe937939562b0d6
+	(0,1):  6c8b7180f806fac74e7a571ded19b53c872ae998
+	(1,0):  e40591ee555fcc748f29cb6ac192dc49909c30d7
+	(1,1):  dcc60b8182c653c66de7e2bd522ab01c51de302a
+-------------------------------------------
+ TABLE ID: 23
+-------------------------------------------
+Garbled input A
+	0: 9e952a1937b00933261c01
+	1: 2e3123b9a1bfe60c9fad00
+Garbled input B
+	0: 586497aae6b664bb1b2b00
+	1: 35dc554c1d4fb57ada1f01
+Garbled output C
+	0: 9d0e88a2cbb62f87da4b01
+	1: d0f87a8edd4934fc7feb00
+Garbled Table
+	(0,0):  2c46d4c546441448bbbb834d191476b1132d3855
+	(0,1):  3cd36619ccc866b78b47384b4b6aecfc3f16c2dc
+	(1,0):  83b3cd2adfcc46de1216a3a8a50810b246023da9
+	(1,1):  b9b35dad9a499eab97b08bd25316b7a8e74d2fd8
+-------------------------------------------
+ TABLE ID: 24
+-------------------------------------------
+Garbled input A
+	0: 9e952a1937b00933261c01
+	1: 2e3123b9a1bfe60c9fad00
+Garbled input B
+	0: 586497aae6b664bb1b2b00
+	1: 35dc554c1d4fb57ada1f01
+Garbled output C
+	0: e7536314fcaec7ebbc6d00
+	1: 2b8b61b1b99851a05b9901
+Garbled Table
+	(0,0):  22cd4dccca8406b97db3ee5b3a61fba0a40637bc
+	(0,1):  24d4d2ed7fe6be57f979d379d54adc75eab24276
+	(1,0):  d5577d56e84330cf22190ec59988fb62e00d292a
+	(1,1):  213ebd4c6ab82f9efa9f6fd34b6facc54d6534c7
+-------------------------------------------
+ TABLE ID: 25
+-------------------------------------------
+Garbled input A
+	0: bf0350d1246425c9404e00
+	1: 1fd549c8a473ad0cf24201
+Garbled input B
+	0: 9d0e88a2cbb62f87da4b01
+	1: d0f87a8edd4934fc7feb00
+Garbled output C
+	0: 0f48fc7356bb829ee95800
+	1: f2870e46c6a1ba9af1a301
+Garbled Table
+	(0,0):  51bc69339a075a20e2606e40ecafdfb1f01c605b
+	(0,1):  9ff2a6c48398163d3d638ad8c4c98f126baa5a72
+	(1,0):  ab3a6487dd74361b8f86b303b78cfde6bea682d8
+	(1,1):  30867c6a1d750692729cc5eaf41c0d2b04833497
+-------------------------------------------
+ TABLE ID: 26
+-------------------------------------------
+Garbled input A
+	0: 71d252c33ef3f439930200
+	1: c78837b74a2e088b1f7901
+Garbled input B
+	0: 5fb614659c21ea2a311700
+	1: f1a384db971f8a97929701
+Garbled output C
+	0: f4b59780ddca6f02739801
+	1: dca076d4337d11c6a81c00
+Garbled Table
+	(0,0):  d51d5c3946c3632a16f88329df90f9561ba9c9a2
+	(0,1):  15f1e6ec6323f3cefdb096e8f7e6ddffe95f497d
+	(1,0):  9181d71e02b2114b6703f460b024212ce1d36193
+	(1,1):  cd370fa86c3ae37d9300f142202bd3a7cbfd7024
+-------------------------------------------
+ TABLE ID: 27
+-------------------------------------------
+Garbled input A
+	0: 71d252c33ef3f439930200
+	1: c78837b74a2e088b1f7901
+Garbled input B
+	0: 5fb614659c21ea2a311700
+	1: f1a384db971f8a97929701
+Garbled output C
+	0: 9b8b82bd211664f687d100
+	1: d76cf18382c84b4d0b5d01
+Garbled Table
+	(0,0):  6cc235ee0acd674f74acb3342fec8bbd1529f924
+	(0,1):  6c67b93e870e6ee2214dce4fc728d5ff755d4158
+	(1,0):  c53b43adbadf49c37ccc22b78c39c33b163cc49d
+	(1,1):  fc73997bc3ed2f47419bbd423bfe4b830fe97bfc
+-------------------------------------------
+ TABLE ID: 28
+-------------------------------------------
+Garbled input A
+	0: 0f48fc7356bb829ee95800
+	1: f2870e46c6a1ba9af1a301
+Garbled input B
+	0: f4b59780ddca6f02739801
+	1: dca076d4337d11c6a81c00
+Garbled output C
+	0: 82ea2ef2fa1705482a2e00
+	1: 7b49616bf16f4f6d174c01
+Garbled Table
+	(0,0):  50edaecee382791295ea4491b798695b1ab721e6
+	(0,1):  c7a2f06dee735e7af495c588f6140fd6bd39666e
+	(1,0):  30834b6307cf6a66b492c638ea27bfbe5a1aba1d
+	(1,1):  8ab3f98dd1153b54061e7e5f0a6f6188f1fb0c7b
+-------------------------------------------
+ TABLE ID: 29
+-------------------------------------------
+Garbled input A
+	0: 0f48fc7356bb829ee95800
+	1: f2870e46c6a1ba9af1a301
+Garbled input B
+	0: f4b59780ddca6f02739801
+	1: dca076d4337d11c6a81c00
+Garbled output C
+	0: abd76bd59533f6cd9eee01
+	1: ae6c8c2309a9c17347c400
+Garbled Table
+	(0,0):  e5343f69e4b59cc0e0bdaeec06c17fb190067d7f
+	(0,1):  84ce798575527a87390c85ea4506cd1234dea473
+	(1,0):  d0b66e5569faa7d9fd62b2c4d8d50dea4cbc77e1
+	(1,1):  93dd578fb74d36c8cb447af06e27720c25958a44
+-------------------------------------------
+ TABLE ID: 30
+-------------------------------------------
+Garbled input A
+	0: 9b8b82bd211664f687d100
+	1: d76cf18382c84b4d0b5d01
+Garbled input B
+	0: 82ea2ef2fa1705482a2e00
+	1: 7b49616bf16f4f6d174c01
+Garbled output C
+	0: dfac65f0118c43bb09ba00
+	1: 791b2e73df317de0bfb801
+Garbled Table
+	(0,0):  44378e4f131da6c75fbfb77c9620a0fac04fddae
+	(0,1):  5fe351b0d8875442a5c78af8665bb233ec942df4
+	(1,0):  e813c4cc8b32bfe6621c2b4aa1c0e6285d5790c9
+	(1,1):  ef51cf3263eaa843c447b259ea0d4f899a9ffea6
+-------------------------------------------
+ TABLE ID: 31
+-------------------------------------------
+Garbled input A
+	0: 620d4601abe681be0e9e01
+	1: 666366fb295b62210dfa00
+Garbled input B
+	0: 0a127707032000e74bb801
+	1: 80686440094aee8140f300
+Garbled output C
+	0: 8f243daf600f691f310e00
+	1: 0b23b040109941c2380501
+Garbled Table
+	(0,0):  575c3fda285bd6c9c89d81ef43d295db629e9bbf
+	(0,1):  c3d890c190fa1e52cde31e4e1b3b6a26c353611b
+	(1,0):  8a9416d0c321559043fde29a66de41ae6f2ea587
+	(1,1):  597d2062a2213222c4d67b7842e880dcf5136a71
+-------------------------------------------
+ TABLE ID: 32
+-------------------------------------------
+Garbled input A
+	0: 620d4601abe681be0e9e01
+	1: 666366fb295b62210dfa00
+Garbled input B
+	0: 0a127707032000e74bb801
+	1: 80686440094aee8140f300
+Garbled output C
+	0: faa8e69c5527a70f876901
+	1: 687215a15ae60c3b896a00
+Garbled Table
+	(0,0):  5f7f18dc7a2eb18dfbb61b12036844e86798fbcc
+	(0,1):  90720db5536370f7d4cf3f1bd75607ec8bc8d880
+	(1,0):  5aecb554304b1790ca003bdf6f55acf6ac478a75
+	(1,1):  bac944f6ec8b95401021020941db9f34b6b42f64
+-------------------------------------------
+ TABLE ID: 33
+-------------------------------------------
+Garbled input A
+	0: dfac65f0118c43bb09ba00
+	1: 791b2e73df317de0bfb801
+Garbled input B
+	0: 8f243daf600f691f310e00
+	1: 0b23b040109941c2380501
+Garbled output C
+	0: 70cb23d45ba5e70dc82400
+	1: d4eb14a67849a638f44001
+Garbled Table
+	(0,0):  3789df1f4ac2cf50b6a44df8ab6a95426165b4d8
+	(0,1):  4e4f5dc23e3cfd5b4ba1af80848e3d4487ab7cb2
+	(1,0):  70d4c205012c62d3dbc3439b43e9a3c4ecc3e947
+	(1,1):  6d2b7714a8b6cc4f8c1a304a37798caa56e411ca
+-------------------------------------------
+ TABLE ID: 34
+-------------------------------------------
+Garbled input A
+	0: dfac65f0118c43bb09ba00
+	1: 791b2e73df317de0bfb801
+Garbled input B
+	0: 8f243daf600f691f310e00
+	1: 0b23b040109941c2380501
+Garbled output C
+	0: 53e9b922e55b67945f7500
+	1: 64e4e652220a60d8965401
+Garbled Table
+	(0,0):  6278ef914e9463ef6bb212b60dfc04600367c434
+	(0,1):  ffaa6e2a3f194f7752075cc6b10739c80568b9ba
+	(1,0):  2f9860c1da903dba7beb091a51f3401961871e04
+	(1,1):  bb65ef25d7898b4d6b9f11a13f85bbef838b82d4
+-------------------------------------------
+ TABLE ID: 35
+-------------------------------------------
+Garbled input A
+	0: faa8e69c5527a70f876901
+	1: 687215a15ae60c3b896a00
+Garbled input B
+	0: 70cb23d45ba5e70dc82400
+	1: d4eb14a67849a638f44001
+Garbled output C
+	0: 3f84dbd0055f8a586aac00
+	1: 3bd5bebf40327707087801
+Garbled Table
+	(0,0):  49bedd081d46fb6de79d5911e5081610c3f61e8d
+	(0,1):  92e6aca6fc8a39bb38a655a72d1a3a30b2479e1b
+	(1,0):  322bfea8ab72bd38ee8558081a89956366fae9ac
+	(1,1):  29c1f616a543128e558c606d5c655f6918ef631a
+-------------------------------------------
+ TABLE ID: 36
+-------------------------------------------
+Garbled input A
+	0: ce568fe215823793e65401
+	1: a0aa9a9c2b543fd7677100
+Garbled input B
+	0: dfd76833d98910aebb4b00
+	1: 7c065e843fa581aef54601
+Garbled output C
+	0: e8493428b9855cb4fb1700
+	1: 07377af8cfd3bac0364401
+Garbled Table
+	(0,0):  9465761b06ada6e2a5aadcf3504b54343d2bbbf7
+	(0,1):  4256b7aa914d6a32655ac7d692f6ed65b8e9703d
+	(1,0):  eacb620f11b1f9c17fda7b433efb56da6fd3aaa2
+	(1,1):  b19a0e3347f689a532a28da1de6b6c847740c9c3
+-------------------------------------------
+ TABLE ID: 37
+-------------------------------------------
+Garbled input A
+	0: ce568fe215823793e65401
+	1: a0aa9a9c2b543fd7677100
+Garbled input B
+	0: dfd76833d98910aebb4b00
+	1: 7c065e843fa581aef54601
+Garbled output C
+	0: a6c72da06a8546ca819901
+	1: 1f937703f30cd08ae20400
+Garbled Table
+	(0,0):  4a583337216b895713a0936f6e28b5a1a2921b69
+	(0,1):  6e867e357e3b75993d1a8aa0461f7bae9be88c26
+	(1,0):  7b98de3fdc3fc65bdbe229449242a0191b680640
+	(1,1):  85156e9a59272a00fa360646b62702e0c9ae2778
+-------------------------------------------
+ TABLE ID: 38
+-------------------------------------------
+Garbled input A
+	0: 3f84dbd0055f8a586aac00
+	1: 3bd5bebf40327707087801
+Garbled input B
+	0: e8493428b9855cb4fb1700
+	1: 07377af8cfd3bac0364401
+Garbled output C
+	0: 2d5d64bf11d6f2d6e47600
+	1: d8c5230fbc31331b56d401
+Garbled Table
+	(0,0):  62df1f71cf87badcc67e64688cfc03abbcb067f1
+	(0,1):  70a5b5fa1e998566221371b4d76980254a4594bd
+	(1,0):  fc10bd21977f5a340deb2768d5145a11acec28e2
+	(1,1):  932b3f461c329188bf9d228a779910dc228a22e1
+-------------------------------------------
+ TABLE ID: 39
+-------------------------------------------
+Garbled input A
+	0: 3f84dbd0055f8a586aac00
+	1: 3bd5bebf40327707087801
+Garbled input B
+	0: e8493428b9855cb4fb1700
+	1: 07377af8cfd3bac0364401
+Garbled output C
+	0: 7bc7cf271930dea8534501
+	1: 096935e799b55ab148f900
+Garbled Table
+	(0,0):  fa2cca089971f9eb2e74b13f08060061f152a3a4
+	(0,1):  a10cd74fab8ceb693a69f2c8411e23b283dbcb4a
+	(1,0):  f92db09434be4b3f15101d9ead39612d414ee614
+	(1,1):  446cb4322e7e5a5c8eecdedfde2a6c027b76b6cd
+-------------------------------------------
+ TABLE ID: 40
+-------------------------------------------
+Garbled input A
+	0: a6c72da06a8546ca819901
+	1: 1f937703f30cd08ae20400
+Garbled input B
+	0: 2d5d64bf11d6f2d6e47600
+	1: d8c5230fbc31331b56d401
+Garbled output C
+	0: 726e0bd4e4c79e58b89a00
+	1: 3b781a05fab29c9d6ed701
+Garbled Table
+	(0,0):  59d3397f6229838138d1503be5b8943a1b1dbfba
+	(0,1):  6d7f52a2e109d93798c9abc75b4b42b1273c1929
+	(1,0):  81cfa20b91ab145bbbed2203230e0e7fa0152ebb
+	(1,1):  388f354b35a36a85ad965ce09f47cbd8eaf0d828
+-------------------------------------------
+ TABLE ID: 41
+-------------------------------------------
+Garbled input A
+	0: d1e4a665b0f3c197b61a00
+	1: 11a8081f8c4e137629e601
+Garbled input B
+	0: e9f5c79d2ffb034338d800
+	1: 79be683e034c80d4b04b01
+Garbled output C
+	0: 275be09510b351216d5e01
+	1: 139d91d4282b34f4c32600
+Garbled Table
+	(0,0):  b6494e0978bb29145a70146fb1113c505331190f
+	(0,1):  278ab5ff5380b2316a7e84c841526597330ebc48
+	(1,0):  2d7cae30df4470b1fe5bf9a346513c6a599015be
+	(1,1):  3f293656e5be16e6d6b9a3d2659e815dab6e0872
+-------------------------------------------
+ TABLE ID: 42
+-------------------------------------------
+Garbled input A
+	0: d1e4a665b0f3c197b61a00
+	1: 11a8081f8c4e137629e601
+Garbled input B
+	0: e9f5c79d2ffb034338d800
+	1: 79be683e034c80d4b04b01
+Garbled output C
+	0: d9e17f1fd6074677125701
+	1: df32f3b13ff9fdfcf5cc00
+Garbled Table
+	(0,0):  4bd7433d78fe581bdd865f0091b48ebb853ad5b8
+	(0,1):  fab6ede2b257eecbbd4454f86f906732c72f3cfd
+	(1,0):  40e471a914529a97e92e4dcb7168f44eb5d56c13
+	(1,1):  f2cf7ba6564609f19e1f03279e3d0d23290c565d
+-------------------------------------------
+ TABLE ID: 43
+-------------------------------------------
+Garbled input A
+	0: 726e0bd4e4c79e58b89a00
+	1: 3b781a05fab29c9d6ed701
+Garbled input B
+	0: 275be09510b351216d5e01
+	1: 139d91d4282b34f4c32600
+Garbled output C
+	0: a07355643016cabf175c00
+	1: 5eeb340d6e71e5c291f501
+Garbled Table
+	(0,0):  93d02c0ec56100b1e7df2f344c9f73ee45c10ba7
+	(0,1):  0a43ab8c21922ed04e96c9b62b615d260e5f3a28
+	(1,0):  10d13dcd5c0ff62f34418226fc62d72cf5f62480
+	(1,1):  6b67f0b1bf65cef2be0f70476dbdd3e7e7de6a48
+-------------------------------------------
+ TABLE ID: 44
+-------------------------------------------
+Garbled input A
+	0: 726e0bd4e4c79e58b89a00
+	1: 3b781a05fab29c9d6ed701
+Garbled input B
+	0: 275be09510b351216d5e01
+	1: 139d91d4282b34f4c32600
+Garbled output C
+	0: c62b2b101f6d35c57dc100
+	1: b1408943d2acfddecd4d01
+Garbled Table
+	(0,0):  98a56e360fb253843e35cd28c62e2aaece6585ed
+	(0,1):  baa3572fd894229457e24d9b325fc11fbb7401c3
+	(1,0):  7c8a66daacdcd084c3b7afbe96aaa459242d33dd
+	(1,1):  80ceab6089aabc02fad444b3990187a63fe75490
+-------------------------------------------
+ TABLE ID: 45
+-------------------------------------------
+Garbled input A
+	0: d9e17f1fd6074677125701
+	1: df32f3b13ff9fdfcf5cc00
+Garbled input B
+	0: a07355643016cabf175c00
+	1: 5eeb340d6e71e5c291f501
+Garbled output C
+	0: d48363baa7799258beec00
+	1: 0070c9250c0b50f095ea01
+Garbled Table
+	(0,0):  2babc59c607c2ff1e43fd1019098688714e9485c
+	(0,1):  9b2d7b10e4ae2edcd1dde7514397595c4102d2c3
+	(1,0):  ea60f4eed567bded1cd46bac08b3fa647049c744
+	(1,1):  581250c652f0b3f409122467c886f7bc747be6ed
+-------------------------------------------
+ TABLE ID: 46
+-------------------------------------------
+Garbled input A
+	0: b764d6c0aade387f048e01
+	1: 0d4cf212bf98385d31ab00
+Garbled input B
+	0: a6c3b761286b804be44d01
+	1: 725fef27643d573ec5b000
+Garbled output C
+	0: cd3e70c381e30d986a1d01
+	1: cb4af2ae83625345367b00
+Garbled Table
+	(0,0):  c95967183d2517f7d243d6d6bb04c84b7bc2afce
+	(0,1):  3a4ad16d98138dcc67c126100c8deea6e70627a8
+	(1,0):  8f0673385f85077daaffeed1725b1baa32c3c77a
+	(1,1):  bc3d1d43e85a3ad2c8a0db7aad235245d0f5df9e
+-------------------------------------------
+ TABLE ID: 47
+-------------------------------------------
+Garbled input A
+	0: b764d6c0aade387f048e01
+	1: 0d4cf212bf98385d31ab00
+Garbled input B
+	0: a6c3b761286b804be44d01
+	1: 725fef27643d573ec5b000
+Garbled output C
+	0: 9979f6e5e9127e7aec6301
+	1: 731aebee5c611daac78700
+Garbled Table
+	(0,0):  a5bca95c0a7b7ea4fa4543c266d8030b0b010a77
+	(0,1):  83d63f6dfacc10cb647c6c010fcfd1dd47d14ee6
+	(1,0):  ffb2d8f23a3082b55511a6eec93e0912b9f1a9de
+	(1,1):  70a868fbf096a5662943202d080af338430d8f00
+-------------------------------------------
+ TABLE ID: 48
+-------------------------------------------
+Garbled input A
+	0: d48363baa7799258beec00
+	1: 0070c9250c0b50f095ea01
+Garbled input B
+	0: cd3e70c381e30d986a1d01
+	1: cb4af2ae83625345367b00
+Garbled output C
+	0: a27c2072b962337515c901
+	1: 64c46b1f1697b67f3b7700
+Garbled Table
+	(0,0):  e1a0989b05d84f15bd8a7b76476697f614fb0ac3
+	(0,1):  697ee7bdd12d55bd7a5372c9ac38b1fc56ae5b67
+	(1,0):  6c31650f2bf8523a81533860f186cf781845cad0
+	(1,1):  e01a81320b65949c091e30fcfd6c39b032bc3d09
+-------------------------------------------
+ TABLE ID: 49
+-------------------------------------------
+Garbled input A
+	0: d48363baa7799258beec00
+	1: 0070c9250c0b50f095ea01
+Garbled input B
+	0: cd3e70c381e30d986a1d01
+	1: cb4af2ae83625345367b00
+Garbled output C
+	0: 9ea8214418105f60332b01
+	1: 849c166a653c2fe224c200
+Garbled Table
+	(0,0):  e60ee55a6b8cfcdbfecf12158a410ff84ed7a11c
+	(0,1):  49ce79a3b6c4c58294c71d6e124f6839bf9cc536
+	(1,0):  e7e489bc2f48020e7eaad6ab58f42d4de1cb4cf6
+	(1,1):  94bf4dafcb403c8ba29b86378b61699896dda230
+-------------------------------------------
+ TABLE ID: 50
+-------------------------------------------
+Garbled input A
+	0: 9979f6e5e9127e7aec6301
+	1: 731aebee5c611daac78700
+Garbled input B
+	0: a27c2072b962337515c901
+	1: 64c46b1f1697b67f3b7700
+Garbled output C
+	0: 0ca668dceb4f42077eb801
+	1: 3e5cc965b198d01fa5cb00
+Garbled Table
+	(0,0):  f5f549b35f6dd92ac2c997abc9c2a780fbb6171f
+	(0,1):  41a6f09ceb4ded304ab825b2affa87c2c78b2d06
+	(1,0):  8ea31ab699285b75c8be5dabef20f8e3c081c863
+	(1,1):  d3d50bf93dceabe32562c7b9960274c28d9eb4ce
+-------------------------------------------
+ TABLE ID: 51
+-------------------------------------------
+Garbled input A
+	0: b9db2acc55328329dcbf00
+	1: 79e0bfc133cc722ff86e01
+Garbled input B
+	0: 2652f14592cd3502d69c00
+	1: 855fc1b464e9f6d1f61001
+Garbled output C
+	0: db3a08b6741275611a3500
+	1: c8da9637cc2c91421df301
+Garbled Table
+	(0,0):  0d95ab476d6005ed77e939b1a3e0c1e16dc2c284
+	(0,1):  221ceca85248ab0ef10b9ad56694728cbc0682c9
+	(1,0):  b46020939457828116160657b2d61c9f65915743
+	(1,1):  475f4b6ffeedcacad0b1501e5e3781126fcf6908
+-------------------------------------------
+ TABLE ID: 52
+-------------------------------------------
+Garbled input A
+	0: b9db2acc55328329dcbf00
+	1: 79e0bfc133cc722ff86e01
+Garbled input B
+	0: 2652f14592cd3502d69c00
+	1: 855fc1b464e9f6d1f61001
+Garbled output C
+	0: cecbc2bf957ff789555800
+	1: 99e96cec53f5abe2ebd901
+Garbled Table
+	(0,0):  6ae1b1a8bc9ffacab2f782ffa32ca38f451d7a85
+	(0,1):  c1cd672ec5f64caa3ba3067d74a33deb340c9a3f
+	(1,0):  d9a96120def9c4ae411989d23ce56e0e4af89b96
+	(1,1):  492a2f73de85795f0733c0e32e5b889fd8ffd6a2
+-------------------------------------------
+ TABLE ID: 53
+-------------------------------------------
+Garbled input A
+	0: 0ca668dceb4f42077eb801
+	1: 3e5cc965b198d01fa5cb00
+Garbled input B
+	0: db3a08b6741275611a3500
+	1: c8da9637cc2c91421df301
+Garbled output C
+	0: 011fd5115398dada14e901
+	1: 095f7784c2fb699907c700
+Garbled Table
+	(0,0):  a849a7985fa171ff7ab9fb4c2b1d1b3ff9b8868f
+	(0,1):  d8341790dd3bbcd9d35cbb1de671ed24f376dbc4
+	(1,0):  0345966a5c32dca300196152c105530b674780e5
+	(1,1):  784a9cfd2fd818e4fac24ed431c7cc4e759c881a
+-------------------------------------------
+ TABLE ID: 54
+-------------------------------------------
+Garbled input A
+	0: 0ca668dceb4f42077eb801
+	1: 3e5cc965b198d01fa5cb00
+Garbled input B
+	0: db3a08b6741275611a3500
+	1: c8da9637cc2c91421df301
+Garbled output C
+	0: a2b966c37c18a9bdea8701
+	1: 23dfaa23bb7321281fd200
+Garbled Table
+	(0,0):  b105988b37f969ae3c39ea86d5a46ed3d33e793a
+	(0,1):  f3155c12a9af9783c55de6ae5b4fe51d6094fa34
+	(1,0):  c5c0626df947000e38aa8fd6fbe513a6fc4efaab
+	(1,1):  b4716bedc47cf3d40e4870d7a693407c3ff4db02
+-------------------------------------------
+ TABLE ID: 55
+-------------------------------------------
+Garbled input A
+	0: cecbc2bf957ff789555800
+	1: 99e96cec53f5abe2ebd901
+Garbled input B
+	0: 011fd5115398dada14e901
+	1: 095f7784c2fb699907c700
+Garbled output C
+	0: e7fda90a87ef7829ea1a00
+	1: b0c379fdf5a3e1cf0d2c01
+Garbled Table
+	(0,0):  f2fc7ced79f0c3df933e11199f633ba4ec095f83
+	(0,1):  9b7fde290e5cfc208d66d0d13ac6534282746c86
+	(1,0):  f7cb0850de071f8ae248429ad6c4f28536531b49
+	(1,1):  c45ba7ce291bcb6ba8baf5c8c7bfe61b6e92fd29
+-------------------------------------------
+ TABLE ID: 56
+-------------------------------------------
+Garbled input A
+	0: efc2948f81b36d16249f01
+	1: c886ac23c3af8fa3f49500
+Garbled input B
+	0: 565ec7a39c0b438f339a01
+	1: 5534a9da447e634bb2a200
+Garbled output C
+	0: 9f6db66a9e08aed3200200
+	1: e3bc4570e175cdda5fa001
+Garbled Table
+	(0,0):  ec22c59d159fc366e88198fee1ba08365e9269f9
+	(0,1):  f671bd9595a958ebd0dfb572079bb57d89092883
+	(1,0):  a9f5dc077b502d62c928a0cc44113bfef4fb46c6
+	(1,1):  0234d3c92fe97058d4b948c7b8d29933eb1817a6
+-------------------------------------------
+ TABLE ID: 57
+-------------------------------------------
+Garbled input A
+	0: efc2948f81b36d16249f01
+	1: c886ac23c3af8fa3f49500
+Garbled input B
+	0: 565ec7a39c0b438f339a01
+	1: 5534a9da447e634bb2a200
+Garbled output C
+	0: 03a4882d57a3f211b56a01
+	1: c2a3794000332252204300
+Garbled Table
+	(0,0):  03ec65bc86f83cada569653d6d28b12ee21770ca
+	(0,1):  32b5c65991e932ebdfbd299dad955f9039de5b9b
+	(1,0):  cdc60377f6ed090cf0ab16492d421a2c4fffcbb3
+	(1,1):  c7bd3411b92746f4c063bd069d61f85fca71a73b
+-------------------------------------------
+ TABLE ID: 58
+-------------------------------------------
+Garbled input A
+	0: e7fda90a87ef7829ea1a00
+	1: b0c379fdf5a3e1cf0d2c01
+Garbled input B
+	0: 9f6db66a9e08aed3200200
+	1: e3bc4570e175cdda5fa001
+Garbled output C
+	0: 2d823401a3765462575201
+	1: 3279d520e0f5fa67485500
+Garbled Table
+	(0,0):  46d4df3be2de51b7975269c08582a9ba57f3b110
+	(0,1):  103b592b9dd27909fd54fccf4985f58861acf75a
+	(1,0):  c7a8c397a5577f21872ae060581fde04eb100bce
+	(1,1):  ddbf2969d7b533d7e2b9d53b65041cf2c7208f27
+-------------------------------------------
+ TABLE ID: 59
+-------------------------------------------
+Garbled input A
+	0: e7fda90a87ef7829ea1a00
+	1: b0c379fdf5a3e1cf0d2c01
+Garbled input B
+	0: 9f6db66a9e08aed3200200
+	1: e3bc4570e175cdda5fa001
+Garbled output C
+	0: cbfacac4e76f9bb33ec601
+	1: 4391e7c6d947b78662cf00
+Garbled Table
+	(0,0):  d107b0234ba94082138c1ea57fca3f154abae969
+	(0,1):  3670f50a7696e2ff82c076a382537f3b5caf5694
+	(1,0):  c034a347cd15ab83ce67621f4c367532102e0715
+	(1,1):  9aa28cb0c2ef8782aa09f78761638cf477de8000
+-------------------------------------------
+ TABLE ID: 60
+-------------------------------------------
+Garbled input A
+	0: 03a4882d57a3f211b56a01
+	1: c2a3794000332252204300
+Garbled input B
+	0: 2d823401a3765462575201
+	1: 3279d520e0f5fa67485500
+Garbled output C
+	0: f4236c0e4aae4d4ee44401
+	1: 2179bcd5e7ef1825e1a200
+Garbled Table
+	(0,0):  796ce948c2df64e22abaed6873f715de7370796a
+	(0,1):  b380f3fc4ea0ea582f054a2f8986c2b4cb728557
+	(1,0):  d235ed67b051bf9ef244fd44cba725859014189c
+	(1,1):  eecaf7da4bebf3e0259e6681a88f08a65532d896
+-------------------------------------------
+ TABLE ID: 61
+-------------------------------------------
+Garbled input A
+	0: e1ccc27909316ba18f2c00
+	1: b6c7bbe761bcca96a93701
+Garbled input B
+	0: f97b5813c41366211a8600
+	1: 9bccb9090a456f9d8d9d01
+Garbled output C
+	0: 37e80c51af2cdff97ad300
+	1: 3100b4d946760a369e2801
+Garbled Table
+	(0,0):  9a67afa540d6a32859ed602744468819c33c2c54
+	(0,1):  ee59a009e30314ad1976732af870b2946e98fb9e
+	(1,0):  eacb2fb2bd7aacdc41499e765464cbb09d23e579
+	(1,1):  79bdce0e8c3fb1af60baba90c806a600c14c900d
+-------------------------------------------
+ TABLE ID: 62
+-------------------------------------------
+Garbled input A
+	0: e1ccc27909316ba18f2c00
+	1: b6c7bbe761bcca96a93701
+Garbled input B
+	0: f97b5813c41366211a8600
+	1: 9bccb9090a456f9d8d9d01
+Garbled output C
+	0: d1f767c4de921fc4f94f01
+	1: eef9957f2cd0214e914100
+Garbled Table
+	(0,0):  6305cfe8c83ce7a6af1b49709ae0e0d3b471f479
+	(0,1):  6a4ce33635ee283328fb854cf5440bc5d1bc4d03
+	(1,0):  e9d34581a7e97ed99f7d813cfba6f1880cca7ee1
+	(1,1):  ea8ef86c77806d3c82be5f6af292e04fbcadd7da
+-------------------------------------------
+ TABLE ID: 63
+-------------------------------------------
+Garbled input A
+	0: f4236c0e4aae4d4ee44401
+	1: 2179bcd5e7ef1825e1a200
+Garbled input B
+	0: 37e80c51af2cdff97ad300
+	1: 3100b4d946760a369e2801
+Garbled output C
+	0: a1d32272e4423d0b78da00
+	1: 693241004641c703b12601
+Garbled Table
+	(0,0):  23147b4482024e84992099043e4b1c61ec0507bf
+	(0,1):  42bd064d2b89604f1828943d5116d39926a9665a
+	(1,0):  b4639d29ffd342e99240bdc278a03757d1512fa8
+	(1,1):  836fc80d2e2b657ff7aefded6a88a3fd5b8a13ea
+-------------------------------------------
+ TABLE ID: 64
+-------------------------------------------
+Garbled input A
+	0: f4236c0e4aae4d4ee44401
+	1: 2179bcd5e7ef1825e1a200
+Garbled input B
+	0: 37e80c51af2cdff97ad300
+	1: 3100b4d946760a369e2801
+Garbled output C
+	0: 3c9a1ef21e0d17a21d8b00
+	1: f906a23a56e9946a0b6601
+Garbled Table
+	(0,0):  34cf329f550e910dc97b2961f8494f3a7fef723e
+	(0,1):  d584c9d4ac8006f7de06a0d6474ef9351e88f982
+	(1,0):  d5f76109c965c0c65b16282b208031c49fa99b16
+	(1,1):  5d563cf3b382c5ccf1ce30b78bdc1e6a7e658ca5
+-------------------------------------------
+ TABLE ID: 65
+-------------------------------------------
+Garbled input A
+	0: d1f767c4de921fc4f94f01
+	1: eef9957f2cd0214e914100
+Garbled input B
+	0: a1d32272e4423d0b78da00
+	1: 693241004641c703b12601
+Garbled output C
+	0: 3e0300def01929b7cf3d00
+	1: 22b34df20906dad67e1601
+Garbled Table
+	(0,0):  a6f7186a041397e2ce0a2e58dc39dd592da80f0d
+	(0,1):  e4fe0c7362d6ee6f1de9a4fd3be2735cc8964f26
+	(1,0):  40ecf35bc47bef52d1ae7c93739c09b7b109984e
+	(1,1):  fbad71b33a8ec5010a6dbd4e615053ac46ead69a
+-------------------------------------------
+ TABLE ID: 66
+-------------------------------------------
+Garbled input A
+	0: da5d9cd80b6c895a4b4900
+	1: a47353c8dfe9d6366f4e01
+Garbled input B
+	0: da68f22fef1e4aa3a3bb00
+	1: 6c3f4a50354f2613e0c701
+Garbled output C
+	0: c1fee170b67d3465921f01
+	1: 295f42d1755ee03ebab000
+Garbled Table
+	(0,0):  ddb8cdfe513e4a6dd33713dc81ee4013adb8b876
+	(0,1):  460baaa2c8125995a4a3ae2ad328fe5e22d8503a
+	(1,0):  5c7be6479b2802f01f5ad50265a28e03a050ab66
+	(1,1):  be08761a48cb15abc56ee75ff0f8cb00c3e6e768
+-------------------------------------------
+ TABLE ID: 67
+-------------------------------------------
+Garbled input A
+	0: da5d9cd80b6c895a4b4900
+	1: a47353c8dfe9d6366f4e01
+Garbled input B
+	0: da68f22fef1e4aa3a3bb00
+	1: 6c3f4a50354f2613e0c701
+Garbled output C
+	0: 0d96344e5c068aea8f6300
+	1: 553ded86566953515ba601
+Garbled Table
+	(0,0):  a5e7a6c4109f981a022bf272646876b366b09a0a
+	(0,1):  25efdf27877fe1c22cd60f9870afdec2109481aa
+	(1,0):  ca8dfe39ee44063fe91ee5ade2205ee7e6ab71cf
+	(1,1):  b9eacf19b4ad1a70fa3aa98c348c64bd11517a27
+-------------------------------------------
+ TABLE ID: 68
+-------------------------------------------
+Garbled input A
+	0: 3e0300def01929b7cf3d00
+	1: 22b34df20906dad67e1601
+Garbled input B
+	0: c1fee170b67d3465921f01
+	1: 295f42d1755ee03ebab000
+Garbled output C
+	0: 6deb558f292c1b22d02f01
+	1: 6575d6a26a165740bd9b00
+Garbled Table
+	(0,0):  1549012c6d4f851d3e2b7ba11a415413e1ef4c07
+	(0,1):  4bf06eb154f2aedb74d2bac7aef3d980f627e172
+	(1,0):  6c5b38c5c02062eeb2e757678ae4faa3f9ff7477
+	(1,1):  b1ce52a26d1c81a6e35a3e1635fb66735056aedf
+-------------------------------------------
+ TABLE ID: 69
+-------------------------------------------
+Garbled input A
+	0: 3e0300def01929b7cf3d00
+	1: 22b34df20906dad67e1601
+Garbled input B
+	0: c1fee170b67d3465921f01
+	1: 295f42d1755ee03ebab000
+Garbled output C
+	0: c3754f683f3d219a2faa00
+	1: 302e741e87cedb3705d801
+Garbled Table
+	(0,0):  5984216b1fe256c3bda15b1dfaa28e9cf932c55c
+	(0,1):  9cd5d98bd10cf71a8566458d4255cd1fbdfe7aeb
+	(1,0):  fde2ab650e4dd12521f6b35460b09e95406f958a
+	(1,1):  15729659b3243d368e4d2e4bcf73a4564ccd98a2
+-------------------------------------------
+ TABLE ID: 70
+-------------------------------------------
+Garbled input A
+	0: 0d96344e5c068aea8f6300
+	1: 553ded86566953515ba601
+Garbled input B
+	0: 6deb558f292c1b22d02f01
+	1: 6575d6a26a165740bd9b00
+Garbled output C
+	0: bc64d20d4236866c6dce00
+	1: fd503e13dd2896024deb01
+Garbled Table
+	(0,0):  cf824858c79bbbca5178771cfe8cde0b93cd3a3e
+	(0,1):  adcb30684ed19d4ae80d910b3ad76356eee709df
+	(1,0):  a40d8ae78f8268eb0edd3bb39cc21ab3018d4361
+	(1,1):  f9fd09bc4e7bdda73d73c5663ce054d3d73a4890
+
